@@ -41,3 +41,54 @@ nav#menu ul a:hover{
     color: var(--destaque);
     transition: background-color 0.3s, color 0.5s;
 }
+main{
+    display: grid;
+    grid-template-columns: 1fr 90vw 1fr;
+    margin-top: 20px;
+}
+section#ficha{
+    background-color: var(--fundo-card);
+    grid-column: 2/3;
+    gap: 20px;
+    border-radius: 8px;
+    padding: 20px;
+}
+section#ficha img{
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: top center;
+    display: block;
+    margin: auto;
+    border: 3px solid var(--fundo-card);
+    outline: 5px solid var(--destaque);
+}
+section#ficha h1{
+    color: var(--destaque);
+    text-align: center;
+    margin: 20px 0;
+}
+section#ficha div#social{
+    display: flex;
+    font-size: 1.7em;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+div#social a{
+    color: var(--destaque);
+}
+div#social a :hover{
+    color: var(--destaque-inverso);
+    transition: color 0.5s;
+}
+/* @media screen and (min-width: 768px) {
+    main{
+        grid-template-columns: auto 300px 1fr auto ;
+    }
+    section#ficha{
+        grid-column: 2/3;
+    }
+} */
