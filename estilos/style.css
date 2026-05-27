@@ -183,6 +183,9 @@ article#projetos{
     gap: 15px;
 }
 .projeto{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
     padding: 10px;
     background-color: var(--fundo-principal);
     border-radius: 8px;
@@ -242,5 +245,18 @@ footer a:hover{color:var(--destaque-inverso)}
     }
     section#detalhes{
         grid-column: 3/4;
+    }
+    #projeto-container .projeto{
+        flex-flow: row-reverse nowrap;
+    }
+    .projeto .foto{
+        max-width: 40%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        max-height: 320px;
+    }
+    .projeto .projeto-info{
+        max-width: 60%;
+        padding-right: 5px;
     }
 }
