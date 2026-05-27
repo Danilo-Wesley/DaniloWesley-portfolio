@@ -174,13 +174,45 @@ div#video-container img{
     margin-top: 5px;
     margin-bottom: -1px;
 }
-
-
+article#projetos{
+    margin-bottom: 20px;
+}
+#projeto-container{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    gap: 15px;
+}
+.projeto{
+    padding: 10px;
+    background-color: var(--fundo-principal);
+    border-radius: 8px;
+    border-left: 5px solid var(--destaque-inverso);
+    transition: border 0.5s;
+}
+.projeto:hover{
+    border-left: var(--destaque) solid 10px;
+}
+.projeto .foto{
+    width: 100%;
+    border-radius: 8px;
+}
+.projeto-info .periodo{
+    color: var(--texto);
+}
+.projeto-info .titulo{
+    color: var(--texto);
+}
+.projeto-info .detalhes{
+    color: var(--texto);
+}
+.projeto-info .detalhes summary:hover{
+        cursor: pointer;
+        color: var(--destaque-inverso);
+    }
 
 
 footer{
     background-color: var(--destaque);
-    margin-top: 20px;
     padding: 15px;
     color: var(--texto-inverso);
     text-align: center;
