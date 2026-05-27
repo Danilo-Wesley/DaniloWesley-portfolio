@@ -211,8 +211,10 @@ article#projetos{
 .projeto-info .detalhes summary:hover{
         cursor: pointer;
         color: var(--destaque-inverso);
-    }
-
+}
+.link-foto{
+    display: contents;
+}
 
 footer{
     background-color: var(--destaque);
@@ -259,4 +261,4 @@ footer a:hover{color:var(--destaque-inverso)}
         max-width: 60%;
         padding-right: 5px;
     }
-}
+} 
