@@ -218,6 +218,10 @@ article#projetos{
 .projeto .foto{
     width: 100%;
     border-radius: 8px;
+    transition: filter 0.3s ease;
+}
+.projeto .foto:hover{
+    filter: brightness(1.1);
 }
 .projeto-info .periodo{
     color: var(--texto);
