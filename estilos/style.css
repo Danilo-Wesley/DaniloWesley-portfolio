@@ -82,6 +82,7 @@ section#ficha h1{
     color: var(--destaque);
     text-align: center;
     margin: 20px 0;
+    line-height: 1.0;
 }
 section#ficha p{
     line-height: 1.4em;
@@ -101,7 +102,7 @@ section#ficha div#social{
 div#social a{
     color: var(--destaque);
 }
-div#social a :hover{
+div#social a:hover{
     color: var(--destaque-inverso);
     transition: color 0.5s;
 }
@@ -118,7 +119,7 @@ article h2{
     color: var(--destaque);
     margin-bottom: 15px;
 }
-article#apresentar div#video-container{
+article.apresentar div#video-container{
     display: block;
     width: 100%;
     margin: auto;
@@ -173,9 +174,9 @@ div#video-container img{
 #formacao-container .curso:hover{
     border-left: 15px solid var(--destaque);
     cursor: pointer;
-    .titulacao{
-        color: var(--destaque);
-    }
+}
+#formacao-container .curso:hover .titulacao {
+    color: var(--destaque);
 }
 #formacao-container .periodo{
     font-size: 0.8em;
@@ -274,6 +275,9 @@ footer a:hover{color:var(--destaque-inverso)}
     }
     #projeto-container .projeto{
         flex-flow: row-reverse nowrap;
+    }
+    .projeto{
+        justify-content: space-between;
     }
     .projeto .foto{
         max-width: 40%;
