@@ -21,12 +21,12 @@ body{
     transition: background-color 0.4s, color 1s;
 }
 body.escuro{
-    --fundo-principal: #222222;
-    --texto: #e0e0e0;
-    --texto-inverso: #333333;
-    --destaque: #ff5522;
-    --destaque-inverso:#a73917;
-    --fundo-card:#444444;
+    --fundo-principal: #090a0f;  
+    --texto: #f1f5f9;            
+    --texto-inverso: #090a0f;
+    --destaque: #0284c7;        
+    --destaque-inverso: #38bdf8; 
+    --fundo-card: #141722;     
 }
 header{
     display: flex;
@@ -71,16 +71,24 @@ section#ficha img{
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
-    object-position: top center;
+    object-position: center top;
     display: block;
     margin: auto;
     border: 3px solid var(--fundo-card);
     outline: 5px solid var(--destaque);
+    
 }
 section#ficha h1{
     color: var(--destaque);
     text-align: center;
     margin: 20px 0;
+}
+section#ficha p{
+    line-height: 1.4em;
+    text-align: justify;
+    font-size: 0.9em;
+    hyphens: auto;
+    
 }
 section#ficha div#social{
     display: flex;
